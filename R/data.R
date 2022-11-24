@@ -1,5 +1,6 @@
 ################################################################################
 # Define functions
+## Read raw data
 read_cards <- function(
     cards_path,
     column_types
@@ -11,6 +12,7 @@ read_cards <- function(
     return(cards)
 }
 
+## Auxiliary function for generating harvest sizes in `augment_card` function
 sequence_harvest_sizes <- function(
     bean_prices
 ) {
@@ -21,6 +23,7 @@ sequence_harvest_sizes <- function(
     return(harvest_sizes)
 }
 
+## Calculate probability of drawing the card
 calculate_last_drawing_probability <- function(
     harvest_sizes,
     count
@@ -31,6 +34,7 @@ calculate_last_drawing_probability <- function(
     return(drawing_probabilities)
 }
 
+## Auxiliary function for removing NAs in a vector
 remove_missing <- function(
     x
 ) {
@@ -39,6 +43,7 @@ remove_missing <- function(
     return(x)
 }
 
+## Auxiliary function for calculating coin payout of a card given the harverst size
 coin_payout_calculator <- function(
     bean_prices
 ) {
@@ -55,6 +60,7 @@ coin_payout_calculator <- function(
     return(calculate_coin_payout)
 }
 
+## Auxiliary function for calculating partial coin payout of a card given the harverst size
 partial_coin_payout_calculator <- function(
     bean_prices
 ) {
@@ -71,6 +77,7 @@ partial_coin_payout_calculator <- function(
     return(calculate_partial_coin_payout)
 }
 
+## Calculate coint payout of a card
 calculate_coin_payout <- function(
     harvest_sizes,
     bean_prices
@@ -81,6 +88,7 @@ calculate_coin_payout <- function(
     return(coin_payouts)
 }
 
+## Calculate partial coint payout of a card
 calculate_partial_coin_payout <- function(
     harvest_sizes,
     bean_prices
@@ -91,6 +99,7 @@ calculate_partial_coin_payout <- function(
     return(partial_coin_payouts)
 }
 
+## Calculate differential coint payout of a card
 calculate_differential_coin_payout <- function(
     coin_payouts
 ) {
@@ -99,6 +108,7 @@ calculate_differential_coin_payout <- function(
     return(differential_coin_payouts)
 }
 
+## Calculate differential partial coint payout of a card
 calculate_differential_partial_coin_payout <- function(
     partial_coin_payouts
 ) {
@@ -107,6 +117,8 @@ calculate_differential_partial_coin_payout <- function(
     return(differential_partial_coin_payouts)
 }
 
+## One of the main functions
+## Calculate bean value of a card
 calculate_bean_value <- function(
     drawing_probabilities,
     differential_coin_payouts
@@ -116,6 +128,8 @@ calculate_bean_value <- function(
     return(bean_values)
 }
 
+## One of the main functions
+## Calculate partial bean value of a card
 calculate_patial_bean_value <- function(
     drawing_probabilities,
     differential_partial_coin_payouts
@@ -125,6 +139,9 @@ calculate_patial_bean_value <- function(
     return(partial_bean_values)
 }
 
+## One of the main functions
+## It takes the data of a card (row of cards dataset) and augments it to include
+## useful statistics such as coin payout per harverst size
 augment_card <- function(
     card
 ) {
@@ -159,6 +176,9 @@ augment_card <- function(
     return(data)
 }
 
+## One of the main functions
+## It applies `augment_card` to the whole dataset `cards` (original data
+## obtained from Bohnanza's wikipedia article)
 process_cards <- function(
     raw_cards
 ) {
@@ -188,6 +208,7 @@ process_cards <- function(
     return(cards)
 }
 
+## Auxliary function of getting the bean names of the cards dataset
 extract_bean_names <- function(
     cards
 ) {

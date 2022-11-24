@@ -23,10 +23,12 @@ results <- tar_read(results)
 
 ################################################################################
 # Define UI
+## Define header
 header <- dashboardHeader(
     title = "Bohnanza"
 )
 
+## Define sidebar
 sidebar <- dashboardSidebar(
     sidebarMenu(
         menuItem("Introduction", tabName = "introduction"),
@@ -36,6 +38,7 @@ sidebar <- dashboardSidebar(
     )
 )
 
+## Define introduction tab
 introduction_tab <- tabItem(tabName = "introduction",
     tags$style("#shiny-tab-introduction {font-size: 18px;}"),
     fluidRow(
@@ -77,6 +80,7 @@ introduction_tab <- tabItem(tabName = "introduction",
     )
 )
 
+## Define modelling summary tab
 modelling_summary_tab <- tabItem(tabName = "modelling_summary",
     fluidRow(
         column(width = 6,
@@ -112,6 +116,7 @@ modelling_summary_tab <- tabItem(tabName = "modelling_summary",
     )
 )
 
+## Define specific bean analysis tab
 bean_analysis_tab <- tabItem(tabName = "bean_analysis",
     fluidRow(
         column(width = 6,
@@ -165,6 +170,7 @@ bean_analysis_tab <- tabItem(tabName = "bean_analysis",
     )
 )
 
+## Define data (for dowloading) tab
 data_tab <- tabItem(tabName = "data",
     tags$style("#shiny-tab-data {font-size: 18px;}"),
     fluidRow(

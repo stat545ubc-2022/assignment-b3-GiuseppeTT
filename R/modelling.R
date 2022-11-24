@@ -1,5 +1,9 @@
 ################################################################################
 # Define functions
+## One of the main functions
+## Calculate a lot of useful statistics for ALL beans
+## Statistics are: first bean value, mean bean value, harvest slope bean value
+## and coin slope bean value
 model_cards <- function(
     cards
 ) {
@@ -48,6 +52,7 @@ model_cards <- function(
     return(results)
 }
 
+## Plot first bean value for ALL beans
 plot_first_bean_value <- function(
     results
 ) {
@@ -69,6 +74,7 @@ plot_first_bean_value <- function(
     return(plot)
 }
 
+## Plot mean bean value for ALL beans
 plot_mean_bean_value <- function(
     results
 ) {
@@ -90,6 +96,7 @@ plot_mean_bean_value <- function(
     return(plot)
 }
 
+## Plot harvest slope value for ALL beans
 plot_harvest_slope_bean_value <- function(
     results
 ) {
@@ -111,6 +118,7 @@ plot_harvest_slope_bean_value <- function(
     return(plot)
 }
 
+## Plot coin slope value for ALL beans
 plot_coin_slope_bean_value <- function(
     results
 ) {

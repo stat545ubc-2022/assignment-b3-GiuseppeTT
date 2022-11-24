@@ -27,6 +27,8 @@ tar_source()
 
 ################################################################################
 # Define targets (pipeline)
+
+## Targets to read, clean and augment data
 data_targets <- list(
     tar_file(
         cards_path,
@@ -50,9 +52,7 @@ data_targets <- list(
     )
 )
 
-exploratory_analysis_targets <- list(
-)
-
+## Targets for modelling (calculating a lot of useful statistics based on linear regression)
 modelling_targets <- list(
     tar_target(
         results,
@@ -60,8 +60,8 @@ modelling_targets <- list(
     )
 )
 
+## Join all targets
 all_targets <- list(
     data_targets,
-    exploratory_analysis_targets,
     modelling_targets
 )

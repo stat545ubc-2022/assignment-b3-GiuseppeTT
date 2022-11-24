@@ -1,3 +1,4 @@
+## Auxiliary function to get consistent breaks for plotting
 get_breaks <- function(
     variable
 ) {
@@ -16,6 +17,7 @@ get_breaks <- function(
     return(breaks)
 }
 
+## Auxiliary function to get consistent limits for plotting
 get_limits <- function(
     variable
 ) {
@@ -25,6 +27,7 @@ get_limits <- function(
     return(limits)
 }
 
+## Auxiliary function to get consistent axis name for plotting
 get_labs <- function(
     variable
 ) {

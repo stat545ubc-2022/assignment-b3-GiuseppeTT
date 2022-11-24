@@ -1,5 +1,6 @@
 ################################################################################
 # Define functions
+## Plot coin payout for one bean
 plot_coin_payout <- function(
     cards,
     bean_name,
@@ -35,6 +36,7 @@ plot_coin_payout <- function(
     return(plot)
 }
 
+## Plot bean efficiency for one bean
 plot_bean_efficiency <- function(
     cards,
     bean_name,
@@ -70,6 +72,7 @@ plot_bean_efficiency <- function(
     return(plot)
 }
 
+## Plot bean value for one bean
 plot_bean_value <- function(
     cards,
     bean_name,
@@ -110,6 +113,7 @@ plot_bean_value <- function(
     return(plot)
 }
 
+## Generate table with summary statistics for one bean
 table_statistics <- function(
     results,
     bean_name
