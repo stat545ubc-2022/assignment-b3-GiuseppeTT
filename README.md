@@ -2,12 +2,12 @@
 
 ## Choice of assignment and features
 
-I choose **Option B** "Create your own shiny app with three features, and deploy it" for my assignment.
+I chose **Option B** "Create your own shiny app with three features, and deploy it" for my assignment.
 
 For the three demanded features, I chose:
 
 - **Feature 1:** Developed the dashboard using the `{shinydashboard}` R package, which adds extra features to Shiny in order to be able to easily create a dashboard
-- **Feature 2:** Allow the user to change the plots and tables by changing the x axis variable and the card being analyzed. You can check that on "Bean analysis" tab (third tab) on the dashboard.
+- **Feature 2:** Allow the user to change the plots and tables by changing the x axis variable and the card being analyzed. You can check that on the "Bean analysis" tab (third tab) on the dashboard.
 - **Feature 3:** Allow the user to easily download the data used in the analysis. You can check that on the "Data" tab (fourth tab) on the dashboard.
 
 ## Description
@@ -20,7 +20,7 @@ You can check the dashboard online on shinyapps.io by clicking on the following 
 
 ## Acknowledgement
 
-The original data used to create this dashboard was obtained from the [Bohnanza's wikipedia article](https://en.wikipedia.org/wiki/Bohnanza).
+The original data used to create this dashboard was obtained from [Bohnanza's wikipedia article](https://en.wikipedia.org/wiki/Bohnanza).
 
 ## How to run (locally)
 
