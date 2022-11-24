@@ -1,8 +1,26 @@
 # Bohnanza dashboard
 
+## Choice of assignment and features
+
+I choose **Option B** "Create your own shiny app with three features, and deploy it" for my assignment.
+
+For the three demanded features, I chose:
+
+- **Feature 1:** Developed the dashboard using the `{shinydashboard}` R package, which adds extra features to Shiny in order to be able to easily create a dashboard
+- **Feature 2:** Allow the user to change the plots and tables by changing the x axis variable and the card being analyzed. You can check that on "Bean analysis" tab (third tab) on the dashboard.
+- **Feature 3:** Allow the user to easily download the data used in the analysis. You can check that on the "Data" tab (fourth tab) on the dashboard.
+
 ## Description
 
-TODO.
+Hi and welcome to my STAT 545 Assignment B-3 project, in which I develop a shiny dashboard. Here, I present a full analysis of the board game Bohnanza. More specifically, I analyze the value of each bean (card type).
+
+If you are not familiar with Bohnanza, I recommend you read [its wikipedia article](https://en.wikipedia.org/wiki/Bohnanza). The main thing you need to know is that there are many different beans (card types) you must plant (play) to earn coins. Moreover, the rarity and payout changes between beans. Thus, it is interesting to know the value of each bean.
+
+You can check the dashboard online on shinyapps.io by clicking on the following link: https://giuseppett.shinyapps.io/assignment-b3-giuseppett/
+
+## Acknowledgement
+
+The original data used to create this dashboard was obtained from the [Bohnanza's wikipedia article](https://en.wikipedia.org/wiki/Bohnanza).
 
 ## How to run (locally)
 
