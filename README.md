@@ -6,9 +6,9 @@ I chose **Option B** "Create your own shiny app with three features, and deploy 
 
 For the three demanded features, I chose:
 
-- **Feature 1:** Developed the dashboard using the `{shinydashboard}` R package, which adds extra features to Shiny in order to be able to easily create a dashboard
-- **Feature 2:** Allow the user to change the plots and tables by changing the x axis variable and the card being analyzed. You can check that on the "Bean analysis" tab (third tab) on the dashboard.
-- **Feature 3:** Allow the user to easily download the data used in the analysis. You can check that on the "Data" tab (fourth tab) on the dashboard.
+- **Feature 1:** Developed the dashboard using the `{shinydashboard}` R package, which adds extra features to Shiny in order to be able to easily create a dashboard. The dashboard interface makes it easier to showcase the analysis.
+- **Feature 2:** Allow the user to change the plots and tables by changing the x axis variable and the card being analyzed. You can check that on the "Bean analysis" tab (third tab) on the dashboard. The ability to change the plot and tables allows the user to explore multiple analysis in a single interface.
+- **Feature 3:** Allow the user to easily download the data used in the analysis. You can check that on the "Data" tab (fourth tab) on the dashboard. The ability to download the data allows the user to easily access that data, reproduce my analysis and do their own analysis.
 
 ## Description
 
