@@ -41,24 +41,24 @@ introduction_tab <- tabItem(tabName = "introduction",
     markdown("
     # Introduction
 
-    Hi and wellcome to my shiny dashboard. Here, I present a full analysis of the boardgame Bohnanza. More specifically, I analyze the value of each bean (card type). If you are not familiar with Bohnanza, I recommend you read [its wikipedia article](https://en.wikipedia.org/wiki/Bohnanza). The main thing you need to know is that there are many different beans (card types) you must plant (play) to earn coins. Moreover, the rarity and payout changes between beans. Thus, it is interesting to know the value of each bean.
+    Hi and welcome to my shiny dashboard. Here, I present a full analysis of the board game Bohnanza. More specifically, I analyze the value of each bean (card type). If you are not familiar with Bohnanza, I recommend you read [its wikipedia article](https://en.wikipedia.org/wiki/Bohnanza). The main thing you need to know is that there are many different beans (card types) you must plant (play) to earn coins. Moreover, the rarity and payout changes between beans. Thus, it is interesting to know the value of each bean.
 
     # Value formula
 
     In this dashboard you are going to see a lot of references to \"bean value\". The bean value of a card is essentially how much \"value\" it is going to add to your game if you get the card by chance, that is, by directly drawing it or obtaining it by trading with someone who is going to draw it.
 
-    A good starting point for measuring the value of a card is to calculate how much closer you are going to be to obtain one more coin by planting the card. This is called \"bean efficiency\" in this dashboard. For instance, 10 Coffee Beans (24) award you 3 coins, but 12 award 4 coins. Thus, if you have 10 Coffe Beans (24), the value of one more (totalling 11) Coffe Bean (24) could be defined as 0.5 coin.
+    A good starting point for measuring the value of a card is to calculate how much closer you are going to be to obtain one more coin by planting the card. This is called \"bean efficiency\" in this dashboard. For instance, 10 Coffeee Beans (24) award you 3 coins, but 12 award 4 coins. Thus, if you have 10 Coffee Beans (24), the value of one more (totalling 11) Coffee Bean (24) could be defined as 0.5 coin.
 
-    In my opinion, an even better way to measure value is to factor in the probability of drawing a card so it balances rare cards that awards a lot of coins with common cards that awards few coins. In summary, the formula that I used to measure bean value of a card is
+    In my opinion, an even better way to measure value is to factor in the probability of drawing a card so it balances rare cards that award a lot of coins with common cards that award few coins. In summary, the formula that I used to measure bean value of a card is
 
     \\<probability of drawing the card\\> * \\<bean efficiency of the card\\>
 
-    A quick technical detail, when printing and plotting the bean values, I divide them by the maximum measured value so that comparisons are easier to make. Besides, the scale of the bean value is pratically meanless.
+    A quick technical detail, when printing and plotting the bean values, I divide them by the maximum measured value so that comparisons are easier to make. Besides, the scale of the bean value is practically meaningless.
 
     # Conclusions
 
     - In general, cards are well balanced.
-    - Coccoa bean (4) is very bad. It gives too few coins for the probability of drawing. Besides, Garden Bean (6) dominates it.
+    - Cocoa Bean (4) is very bad. It gives too few coins for the probability of drawing. Besides, Garden Bean (6) dominates it.
     - Soy Bean (12) can be harvested at any time because its bean efficiency is essentially constant (and bean value is decadent).
     ")
 )
@@ -157,7 +157,7 @@ data_tab <- tabItem(tabName = "data",
             box(
                 title = "Cards data",
                 width = NULL,
-                markdown("If you are interested in downloading original data, which cotains the coin payout of each cards, you can use the following button. The data was originally obtained from [the Bohnanza's wikipedia article](https://en.wikipedia.org/wiki/Bohnanza)"),
+                markdown("If you are interested in downloading original data, which contains the coin payout of each card, you can use the following button. The data was originally obtained from [the Bohnanza's wikipedia article](https://en.wikipedia.org/wiki/Bohnanza)"),
                 downloadButton('cards_data_downloader', 'Download')
             )
         ),
